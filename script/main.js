@@ -1,13 +1,9 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Do you want to play music in the background?',
-        icon: 'warning',
-        showCancelButton: true,
+        title: 'Nghe 1 chút nhạc nhé!!!',
         confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
+        confirmButtonText: 'Đồng ý'
     }).then((result) => {
         if (result.isConfirmed) {
             document.querySelector('.song').play();
@@ -90,10 +86,10 @@ const animationTimeline = () => {
         scale: 0.2,
         opacity: 0,
     })
-    .from(".fake-btn", 0.3, {
-        scale: 0.2,
-        opacity: 0,
-    })
+    // .from(".fake-btn", 0.1, {
+    //     scale: 0.2,
+    //     opacity: 0,
+    // })
     .staggerTo(
         ".hbd-chatbox span",
         1.5, {
@@ -101,10 +97,10 @@ const animationTimeline = () => {
         },
         0.05
     )
-    .to(".fake-btn", 0.1, {
-        backgroundColor: "rgb(127, 206, 248)",
-    },
-    "+=4")
+    // .to(".fake-btn", 0.1, {
+    //     backgroundColor: "rgb(127, 206, 248)",
+    // },
+    // "+=4")
     .to(
         ".four",
         0.5, {
@@ -115,8 +111,8 @@ const animationTimeline = () => {
     "+=1")
     .from(".idea-1", 0.7, ideaTextTrans)
     .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
-    .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
+    // .from(".idea-2", 0.7, ideaTextTrans)
+    // .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
         scale: 1.2,
