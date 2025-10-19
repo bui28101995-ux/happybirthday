@@ -1,7 +1,7 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Nghe 1 chút nhạc nhé!!!',
+        title: 'Nghe 1 chút nhạc nhá!!!',
         confirmButtonColor: '#3085d6',
         confirmButtonText: 'Đồng ý'
     }).then((result) => {
@@ -108,11 +108,9 @@ const animationTimeline = () => {
             opacity: 0,
             y: -150
         },
-    "+=1")
+    "+=0.5")
     .from(".idea-1", 0.7, ideaTextTrans)
     .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
-    // .from(".idea-2", 0.7, ideaTextTrans)
-    // .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
         scale: 1.2,
@@ -121,8 +119,8 @@ const animationTimeline = () => {
         color: "#fff",
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
-    .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
+    // .from(".idea-4", 0.7, ideaTextTrans)
+    // .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
     .from(
         ".idea-5",
         0.7, {
@@ -150,27 +148,6 @@ const animationTimeline = () => {
             opacity: 0,
         },
         "+=2"
-    )
-    .staggerFrom(
-        ".idea-6 span",
-        0.8, {
-            scale: 3,
-            opacity: 0,
-            rotation: 15,
-            ease: Expo.easeOut,
-        },
-        0.2
-    )
-    .staggerTo(
-        ".idea-6 span",
-        0.8, {
-            scale: 3,
-            opacity: 0,
-            rotation: -15,
-            ease: Expo.easeOut,
-        },
-        0.2,
-        "+=1.5"
     )
     .staggerFromTo(
         ".baloons img",
